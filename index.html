@@ -20,29 +20,40 @@
 
 			input {
 				width: 200px;
-				margin-bottom: 20px;
 			}
 
 			button {
 				margin-right: auto;
+			}
+
+			.error {
+				color: red;
+				font-weight: bolder;
+				margin: 0px;
+				margin-bottom: 30px;
 			}
 		</style>
 		<script defer src="index.js"></script>
 	</head>
 
 	<body>
-		<form action="">
+		<form action="" novalidate>
 			<label for="email">Please write your email:</label>
 			<input id="email" type="email" />
+			<p class="error email"></p>
 			<label for="country">Please write your country:</label>
 			<input id="country" type="text" />
+			<p class="error country"></p>
 			<label for="postal-code">Please write your postal-code:</label>
 			<input id="postal-code" type="text" />
+			<p class="error postal-code"></p>
 			<label for="password">Please write your password:</label>
 			<input id="password" type="password" />
+			<p class="error password"></p>
 			<label for="password-confirm">Please confirm your password:</label>
 			<input id="password-confirm" type="password" />
-			<button>Submit</button>
+			<p class="error password-confirm"></p>
+			<button type="button">Submit</button>
 		</form>
 	</body>
 </html>
